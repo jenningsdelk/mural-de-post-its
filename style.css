@@ -1,0 +1,117 @@
+
+
+/* Lista de tarefas*/
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #222;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: url('./fundo.png') center/cover no-repeat;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: -1;
+}
+/*Cabeçalho */
+header {
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Local onde coloca o texto e o botão */
+.input-area {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+button {
+  padding: 10px 15px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+/*Espaço de trabalho*/
+#workspace {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 150px);
+  overflow: hidden;
+}
+
+/*Estilo das tarefas */
+.task {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  cursor: grab;
+  user-select: none;
+  transition: transform 0.2s ease;
+  width: 200px;
+}
+
+.task:hover {
+  transform: scale(1.03);
+}
+
+.task.dragging {
+  opacity: 0.6;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Botões e texto */
+.task span {
+  display: inline-block;
+  width: 150px;
+  cursor: text;
+}
+
+.task button {
+  background: none;
+  border: none;
+  color: #ff3b3b;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.task button:hover {
+  color: #ff0000;
+}
+
+
+
+
+
+
+

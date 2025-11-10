@@ -1,0 +1,21 @@
+# Lista de Tarefas Livre
+
+Aplicação web simples e interativa para gerenciar tarefas com layout livre.  
+Permite criar, mover, editar e marcar tarefas em qualquer lugar da tela.
+
+## Funcionalidades
+
+- Adicionar novas tarefas  
+- Editar e remover tarefas  
+- Marcar tarefas concluídas  
+- Mover tarefas livremente pela tela 
+- Layout que ocupa toda a área visível  
+- Fundo de imagem personalizado  
+- Evita sobreposição ao criar novas tarefas  
+- Salva automaticamente as informações
+
+## Tecnologias Utilizadas
+
+- **HTML5** → estrutura base  
+- **CSS3** → layout, cores e estilo  
+- **JavaScript (puro)** → lógica, interatividade e persistência local  

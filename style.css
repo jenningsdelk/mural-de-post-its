@@ -12,7 +12,7 @@ body {
 
 body::after {
   content: '';
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(4px);
@@ -30,6 +30,7 @@ header {
 .input-area {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 20px auto;
   gap: 10px;
 }
@@ -37,6 +38,7 @@ header {
 input {
   padding: 10px;
   width: 300px;
+  max-width: 90%;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -59,7 +61,7 @@ button:hover {
   position: relative;
   width: 100%;
   height: calc(100vh - 150px);
-  overflow: hidden;
+  overflow: auto;
 }
 
 /*Estilo das tarefas */
@@ -73,6 +75,7 @@ button:hover {
   user-select: none;
   transition: transform 0.2s ease;
   width: 200px;
+  max-width:80%;
 }
 
 .task:hover {
@@ -92,6 +95,7 @@ button:hover {
 .task span {
   display: inline-block;
   width: 150px;
+  max-width: 70%;
   cursor: text;
 }
 
@@ -108,6 +112,7 @@ button:hover {
 .task button:hover {
   color: #ff0000;
 }
+
 
 
 
